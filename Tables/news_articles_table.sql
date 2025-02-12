@@ -1,0 +1,52 @@
+-- Creating news table
+CREATE TABLE NewsArticles (
+    news_id INT IDENTITY(1,1) PRIMARY KEY,
+    headline NVARCHAR(255) NOT NULL,
+    content NVARCHAR(MAX) NOT NULL,
+    article_link NVARCHAR(500) NOT NULL,
+    image_link NVARCHAR(500) NULL
+);
+
+-- Addint dummy news articles
+-- INSERT INTO NewsArticles (headline, content, article_link, image_link)
+-- VALUES
+-- ('Canada''s Budget Deficit Widens to C$22.72 Billion',
+--  'Canada''s budget deficit for the first eight months of the 2024/25 fiscal year reached C$22.72 billion, up from C$19.14 billion the previous year, due to government expenditures growing faster than revenues.',
+--  'https://www.reuters.com/world/americas/canada-budget-deficit-over-first-eight-months-202425-jumps-c2272-bln-2025-01-31/',
+--  'https://www.reuters.com/resizer/URL_to_image1.jpg'),
+-- ('Canada Prepares Retaliatory Tariffs Against U.S.',
+--  'In response to proposed U.S. tariffs, former Canadian finance minister Chrystia Freeland suggests imposing 100% tariffs on Tesla vehicles and American alcoholic beverages to exert political pressure.',
+--  'https://www.ft.com/content/f177fcbe-d632-4685-8541-ac537ba227f6',
+--  'https://www.ft.com/__origami/service/image/v2/images/raw/URL_to_image2.jpg'),
+-- ('Inflation Impacts Half of Canadians'' Finances',
+--  'A recent report indicates that half of Canadians feel their financial situation has worsened compared to the previous year, primarily due to rising inflation rates.',
+--  'https://canadanewsmedia.ca/inflation-half-of-canadians-finances-worse-than-last-year-ctv-news-2/',
+--  'https://canadanewsmedia.ca/wp-content/uploads/2024/12/URL_to_image3.jpg'),
+-- ('SoftBank Returns to Profit After Gains in Vision Fund',
+--  'Japanese technology group SoftBank reported a fiscal second-quarter profit of nearly 1.18 trillion yen, boosted by positive results in its Vision Fund investments.',
+--  'https://canadanewsmedia.ca/inflation-half-of-canadians-finances-worse-than-last-year-ctv-news-2/',
+--  'https://canadanewsmedia.ca/wp-content/uploads/2024/12/URL_to_image4.jpg'),
+-- ('Shopify Executives Downplay Impact of U.S. Tariffs',
+--  'Shopify Inc. executives express confidence that incoming U.S. tariffs will not significantly harm entrepreneurship, emphasizing the resilience of new business formations.',
+--  'https://canadanewsmedia.ca/inflation-half-of-canadians-finances-worse-than-last-year-ctv-news-2/',
+--  'https://canadanewsmedia.ca/wp-content/uploads/2024/12/URL_to_image5.jpg'),
+-- ('European Central Bank Cuts Benchmark Rate',
+--  'The European Central Bank reduced interest rates to support economic growth as inflation declines, a move that could have implications for Canadian markets.',
+--  'https://ca.finance.yahoo.com/',
+--  'https://s.yimg.com/ny/api/res/URL_to_image6.jpg'),
+-- ('Microsoft 365 Experiences Widespread Outage',
+--  'Microsoft''s suite of productivity software faced a significant outage, affecting thousands of users and potentially impacting Canadian businesses relying on these services.',
+--  'https://ca.finance.yahoo.com/',
+--  'https://s.yimg.com/ny/api/res/URL_to_image7.jpg'),
+-- ('U.S. Treasury Proposes New Corporate Minimum Tax Rules',
+--  'The U.S. Treasury announced proposed rules for a new corporate alternative minimum tax, which could influence Canadian companies operating in the U.S.',
+--  'https://ca.finance.yahoo.com/',
+--  'https://s.yimg.com/ny/api/res/URL_to_image8.jpg'),
+-- ('Institute for Sustainable Finance Urges Canada to Accelerate Efforts',
+--  'A new report from the Institute for Sustainable Finance emphasizes the need for Canada to speed up its sustainable finance initiatives to remain competitive globally.',
+--  'https://smith.queensu.ca/centres/isf/news/progres-finance-durable.php',
+--  'https://smith.queensu.ca/centres/isf/images/URL_to_image9.jpg'),
+-- ('Trump Mocks Trudeau Amid Tariff Dispute',
+--  'Former U.S. President Donald Trump mocked Canadian Prime Minister Justin Trudeau following the resignation of Finance Minister Chrystia Freeland amid tariff disagreements.',
+--  'https://nypost.com/2024/12/17/us-news/trump-mocks-justin-trudeau-after-top-ministers-shock-exit-after-tarrif-clash-the-great-state-of-canada-is-stunned/',
+--  'https://nypost.com/wp-content/uploads/2024/12/URL_to_image10.jpg');
